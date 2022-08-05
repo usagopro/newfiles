@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="main">
+        <table id="board">
+            <tr class="row1">
+                <td class="col1 cell" cellno='0'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col2 cell" cellno='1'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col3 cell" cellno='2'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col4 cell" cellno='3'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col5 cell" cellno='4'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col6 cell" cellno='5'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col7 cell" cellno='6'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col8 cell" cellno='7'  onclick="play(this.getAttribute('cellno'))"  ></td>
+            </tr>
+            <tr class="row2">
+                <td class="col1 cell" cellno='8'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col2 cell" cellno='9'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col3 cell" cellno='10'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col4 cell" cellno='11'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col5 cell" cellno='12'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col6 cell" cellno='13'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col7 cell" cellno='14'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col8 cell" cellno='15'  onclick="play(this.getAttribute('cellno'))"  ></td>
+            </tr>
+            <tr class="row3">
+                <td class="col1 cell" cellno='16'  onclick="play(this.getAttribute('cellno'))" ></td>
+                <td class="col2 cell" cellno='17'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col3 cell" cellno='18'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col4 cell" cellno='19'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col5 cell" cellno='20'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col6 cell" cellno='21'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col7 cell" cellno='22'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col8 cell" cellno='23'  onclick="play(this.getAttribute('cellno'))"  ></td>
+            </tr>
+            <tr class="row4">
+                <td class="col1 cell" cellno='24'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col2 cell" cellno='25'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col3 cell" cellno='26'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col4 cell" cellno='27'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col5 cell" cellno='28'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col6 cell" cellno='29'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col7 cell" cellno='30'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col8 cell" cellno='31'  onclick="play(this.getAttribute('cellno'))"  ></td>
+            </tr>
+            <tr class="row5">
+                <td class="col1 cell" cellno='32'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col2 cell" cellno='33'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col3 cell" cellno='34'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col4 cell" cellno='35'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col5 cell" cellno='36'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col6 cell" cellno='37'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col7 cell" cellno='38'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col8 cell" cellno='39'  onclick="play(this.getAttribute('cellno'))"  ></td>
+            </tr>
+            <tr class="row6">
+                <td class="col1 cell" cellno='40'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col2 cell" cellno='41'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col3 cell" cellno='42'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col4 cell" cellno='43'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col5 cell" cellno='44'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col6 cell" cellno='45'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col7 cell" cellno='46'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col8 cell" cellno='47'  onclick="play(this.getAttribute('cellno'))"  ></td>
+            </tr>
+            <tr class="row7">
+                <td class="col1 cell" cellno='48'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col2 cell" cellno='49'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col3 cell" cellno='50'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col4 cell" cellno='51'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col5 cell" cellno='52'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col6 cell" cellno='53'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col7 cell" cellno='54'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col8 cell" cellno='55'  onclick="play(this.getAttribute('cellno'))"  ></td>
+            </tr>
+            <tr class="row8">
+                <td class="col1 cell" cellno='56'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col2 cell" cellno='57'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col3 cell" cellno='58'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col4 cell" cellno='59'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col5 cell" cellno='60'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col6 cell" cellno='61'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col7 cell" cellno='62'  onclick="play(this.getAttribute('cellno'))"  ></td>
+                <td class="col8 cell" cellno='63'  onclick="play(this.getAttribute('cellno'))"  ></td>
+            </tr>
+        </table>
+        <div id="result"></div>
+    </div>
+    <div id="templates">
+        <div id="boards">designs</div>
+        <div id="designs">
+            <div><img src="board designs/A-Sample-Chess-Board.png" alt="" class="board_design" id="board1" white="rgb(255, 211, 161)" black="rgb(171, 102, 37)" onclick="changeColor(this.getAttribute('white') , this.getAttribute('black'))"></div>
+            <div><img src="board designs/phpgcO5pO.png" alt="" class="board_design" id="board2" white="rgb(213,224,238)" black="rgb(115,151,173)" onclick="changeColor(this.getAttribute('white') , this.getAttribute('black'))"></div>
+            <div><img src="board designs/phpwlStm6.png" alt="" class="board_design" id="board3" white="rgb(184,157,149)" black="rgb(53,102,88)" onclick="changeColor(this.getAttribute('white') , this.getAttribute('black'))"></div>
+        </div>
+    </div>
+
+    <h5 id="status"></h5>
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#designs").hide();
+            $("#boards").click(function(){
+                $("#designs").slideToggle(1000);
+            });
+        });
+    </script>
+</body>
+</html>

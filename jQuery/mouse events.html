@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#demo").mouseover(function(){
+                $("#demo").css("background-color" , "#ff0");
+            });
+            $("#demo").mouseout(function(){
+                $("#demo").css("background-color" , "#f00");
+            });
+            
+            $("#b1").click(function(){
+                $("#demo").mouseover();
+            });
+            $("#b2").click(function(){
+                $("#demo").mouseout();
+            });
+        })
+    </script>
+</head>
+<body>
+    <p id="demo">this is a paragraph</p>
+    <button id="b1">mouse over</button>
+    <button id="b2">mouse out</button>
+</body>
+</html>
